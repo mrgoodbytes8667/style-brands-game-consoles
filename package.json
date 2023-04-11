@@ -1,0 +1,11 @@
+{
+  "name": "@mrgoodbytes8667/style-brands-game-consoles",
+  "version": "0.0.1",
+  "description": "Bootstrap inspired style classes for game consoles and platforms",
+  "repository": "https://github.com/mrgoodbytes8667/style-brands-game-consoles",
+  "author": "MrGoodBytes <bytes@mrgoodbytes.dev>",
+  "license": "CC-BY-NC-4.0",
+  "dependencies": {
+    "@mrgoodbytes8667/style-brands": "https://github.com/mrgoodbytes8667/style-brands"
+  }
+}

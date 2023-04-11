@@ -1,0 +1,46 @@
+@import "~@mrgoodbytes8667/style-brands/css/brand";
+
+$color: #003791;
+
+$white: #FFFFFF;
+
+$classNames: (
+        ps4,
+        ps5,
+        psn,
+        playstation
+);
+
+@each $name in $classNames {
+  .btn-#{$name} {
+    @include btn($color, $white);
+  }
+
+  .btn-#{$name}:hover {
+    @include btn-hover($color, $white, 15%);
+  }
+
+  .btn-#{$name}-inverse {
+    @include btn($white, $color);
+  }
+
+  .btn-#{$name}-inverse:hover {
+    @include btn($color, $white);
+  }
+
+  .bg-#{$name} {
+    @include bg($color);
+  }
+
+  .text-#{$name} {
+    @include text($color);
+  }
+
+  .link-#{$name} > a {
+    @include link($color);
+  }
+
+  .link-#{$name}:hover > a {
+    @include link-hover($color);
+  }
+}

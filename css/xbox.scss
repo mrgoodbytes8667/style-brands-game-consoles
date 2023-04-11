@@ -1,0 +1,42 @@
+@import "~@mrgoodbytes8667/style-brands/css/brand";
+
+$color: #107C10;
+$light: rgb(93, 194, 30);
+
+$white: #FFFFFF;
+
+$classNames: (xbox);
+
+@each $name in $classNames {
+  .btn-#{$name} {
+    @include btn($color, $white);
+  }
+
+  .btn-#{$name}:hover {
+    @include btn-hover($light, $white, 0%);
+  }
+
+  .btn-#{$name}-inverse {
+    @include btn($white, $color);
+  }
+
+  .btn-#{$name}-inverse:hover {
+    @include btn($color, $white);
+  }
+
+  .bg-#{$name} {
+    @include bg($color);
+  }
+
+  .text-#{$name} {
+    @include text($color);
+  }
+
+  .link-#{$name} > a {
+    @include link($color);
+  }
+
+  .link-#{$name}:hover > a {
+    @include link-hover($light, 0%);
+  }
+}
